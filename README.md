@@ -2,6 +2,8 @@
 
 Lumen/Laravel package for develop facebook messenger chat bot
 
+[![Build Status](https://travis-ci.org/hungneox/lumen-messenger-sdk.svg?branch=master)](https://travis-ci.org/hungneox/lumen-messenger-sdk)
+
 # Usage
 
 ## Working with templates

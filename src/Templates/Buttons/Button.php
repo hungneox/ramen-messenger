@@ -9,11 +9,10 @@ namespace Neox\Lumen\Messenger\Templates\Buttons;
  */
 abstract class Button
 {
-
-    public const TYPE_WEB_URL       = 'web_url';
-    public const TYPE_POSTBACK      = 'postback';
-    public const TYPE_PAYMENT       = 'payment';
-    public const TYPE_ELEMENT_SHARE = 'element_share';
+    const TYPE_WEB_URL       = 'web_url';
+    const TYPE_POSTBACK      = 'postback';
+    const TYPE_PAYMENT       = 'payment';
+    const TYPE_ELEMENT_SHARE = 'element_share';
 
     protected $types = [
         self::TYPE_WEB_URL,
