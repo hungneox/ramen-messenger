@@ -2,7 +2,6 @@
 
 namespace Neox\Lumen\Messenger\Templates;
 
-
 use Illuminate\Support\Collection;
 use Neox\Lumen\Messenger\Templates\Elements\Element;
 use Neox\Lumen\Messenger\Templates\Elements\ElementInterface;
@@ -33,7 +32,7 @@ class GenericTemplate extends Template
      */
     public function getElementsAsArray(): array
     {
-        return $this->getElements()->map(function(ElementInterface $element) {
+        return $this->getElements()->map(function (ElementInterface $element) {
             return $element->toArray();
         })->toArray();
     }
