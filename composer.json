@@ -1,0 +1,28 @@
+{
+    "name": "hungneox/lumen-messenger-sdk",
+    "description": "Lumen/Laravel package for develop facebook messenger chat bot",
+    "type": "library, sdk",
+    "require": {
+        "illuminate/support": "v5.5.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neox\\Lumen\\Messenger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Neox\\Lumen\\Messenger\\Tests\\": "tests"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hung Neo",
+            "email": "hungnq1989@gmail.com"
+        }
+    ]
+}
