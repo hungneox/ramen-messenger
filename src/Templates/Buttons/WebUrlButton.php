@@ -10,7 +10,7 @@ use Neox\Lumen\Messenger\Templates\Traits\HasUrl;
  */
 class WebUrlButton extends Button
 {
-   use HasUrl;
+    use HasUrl;
 
     /**
      * @return array

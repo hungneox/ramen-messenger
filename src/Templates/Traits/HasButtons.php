@@ -29,7 +29,7 @@ trait HasButtons
      */
     public function getButtonsAsArray(): array
     {
-        return $this->getButtons()->map(function(Button $button) {
+        return $this->getButtons()->map(function (Button $button) {
             return $button->toArray();
         })->toArray();
     }
