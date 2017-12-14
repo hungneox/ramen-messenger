@@ -11,8 +11,8 @@ use Neox\Lumen\Messenger\Templates\Traits\HasUrl;
  */
 class MediaElement implements ElementInterface
 {
-    public const TYPE_IMAGE = 'image';
-    public const TYPE_VIDEO = 'video';
+    const TYPE_IMAGE = 'image';
+    const TYPE_VIDEO = 'video';
 
     protected $types = [
         self::TYPE_IMAGE,
@@ -37,9 +37,9 @@ class MediaElement implements ElementInterface
     /**
      * @return null|string
      */
-    public function getAttachmentId(): ?string
+    public function getAttachmentId(): string
     {
-        return $this->attachmentId;
+        return $this->attachmentId ?? '';
     }
 
     /**

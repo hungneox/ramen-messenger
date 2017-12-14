@@ -92,7 +92,7 @@ class Element implements ElementInterface
     /**
      * @return DefaultActionButton|null
      */
-    public function getDefaultAction(): ?Button
+    public function getDefaultAction()
     {
         return $this->defaultAction;
     }
