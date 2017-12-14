@@ -1,2 +1,7 @@
-/vendor
 .DS_Store
+.idea
+composer.phar
+phpunit.xml
+/coverage/
+/vendor/
+/build/logs/clover.xml

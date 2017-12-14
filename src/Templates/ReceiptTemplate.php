@@ -1,10 +1,10 @@
 <?php
 
-namespace Neox\Jarvis\Messenger\Templates;
+namespace Neox\Lumen\Messenger\Templates;
 
 /**
  * Class ReceiptTemplate
- * @package Neox\Jarvis\Messenger\Templates
+ * @package Neox\Lumen\Messenger\Templates
  * @https://developers.facebook.com/docs/messenger-platform/reference/template/receipt
  */
 class ReceiptTemplate extends GenericTemplate

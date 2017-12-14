@@ -2,8 +2,8 @@
 
 namespace Neox\Lumen\Messenger\Templates\Elements;
 
-use Neox\Lumen\Messenger\Traits\HasButtons;
-use Neox\Lumen\Messenger\Traits\HasUrl;
+use Neox\Lumen\Messenger\Templates\Traits\HasButtons;
+use Neox\Lumen\Messenger\Templates\Traits\HasUrl;
 
 /**
  * Class OpenGraphElement

@@ -2,7 +2,7 @@
 
 namespace Neox\Lumen\Messenger\Templates\Buttons;
 
-use Neox\Lumen\Messenger\Traits\HasUrl;
+use Neox\Lumen\Messenger\Templates\Traits\HasUrl;
 
 /**
  * Class WebUrlButton

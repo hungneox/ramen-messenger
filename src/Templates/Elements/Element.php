@@ -4,7 +4,7 @@ namespace Neox\Lumen\Messenger\Templates\Elements;
 
 use Neox\Lumen\Messenger\Templates\Buttons\Button;
 use Neox\Lumen\Messenger\Templates\Buttons\DefaultActionButton;
-use Neox\Lumen\Messenger\Traits\HasButtons;
+use Neox\Lumen\Messenger\Templates\Traits\HasButtons;
 
 /**
  * Class Element

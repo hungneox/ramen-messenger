@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Traits;
+namespace Neox\Lumen\Messenger\Templates\Traits;
 
 use Illuminate\Support\Collection;
 use Neox\Lumen\Messenger\Templates\Buttons\Button;
