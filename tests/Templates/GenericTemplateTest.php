@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Tests\Messenger\Templates;
+namespace Neox\Lumen\Messenger\Tests\Templates;
 
 use Neox\Lumen\Messenger\Templates\Buttons\PostBackButton;
 use Neox\Lumen\Messenger\Templates\Buttons\WebUrlButton;

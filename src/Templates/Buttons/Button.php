@@ -123,7 +123,7 @@ abstract class Button
      */
     public function getTitle(): string
     {
-        return $this->title;
+        return $this->title ?? '';
     }
 
     /**
