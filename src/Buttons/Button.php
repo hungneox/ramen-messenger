@@ -2,6 +2,8 @@
 
 namespace Neox\Lumen\Messenger\Buttons;
 
+use Neox\Lumen\Messenger\Traits\HasTitle;
+
 /**
  * Class Button
  * @package Neox\Jarvis\Messenger\Templates\Buttons
@@ -20,15 +22,12 @@ abstract class Button
         self::TYPE_PAYMENT
     ];
 
-    /**
-     * @var string
-     */
-    protected $type;
+    use HasTitle;
 
     /**
      * @var string
      */
-    protected $title;
+    protected $type;
 
     /**
      * @var bool
@@ -118,23 +117,6 @@ abstract class Button
         return $this;
     }
 
-    /**
-     * @return string
-     */
-    public function getTitle(): string
-    {
-        return $this->title ?? '';
-    }
-
-    /**
-     * @param string $title
-     * @return $this
-     */
-    public function setTitle(string $title): Button
-    {
-        $this->title = $title;
-        return $this;
-    }
 
     /**
      * @param string $type

@@ -4,6 +4,9 @@ namespace Neox\Lumen\Messenger\Templates\Elements;
 
 use Neox\Lumen\Messenger\Buttons\DefaultActionButton;
 use Neox\Lumen\Messenger\Traits\HasButtons;
+use Neox\Lumen\Messenger\Traits\HasImageUrl;
+use Neox\Lumen\Messenger\Traits\HasSubtitle;
+use Neox\Lumen\Messenger\Traits\HasTitle;
 
 /**
  * Class Element
@@ -12,81 +15,14 @@ use Neox\Lumen\Messenger\Traits\HasButtons;
 class Element implements ElementInterface
 {
     use HasButtons;
-
-    /**
-     * @var string
-     */
-    protected $title;
-
-    /**
-     * @var string
-     */
-    protected $imageUrl;
-
-    /**
-     * @var string
-     */
-    protected $subtitle;
-
+    use HasTitle;
+    use HasSubtitle;
+    use HasImageUrl;
     /**
      * @var DefaultActionButton
      */
     protected $defaultAction;
 
-
-    /**
-     * @return string
-     */
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param string $title
-     * @return $this
-     */
-    public function setTitle(string $title)
-    {
-        $this->title = $title;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getImageUrl(): string
-    {
-        return $this->imageUrl;
-    }
-
-    /**
-     * @param string $imageUrl
-     * @return $this
-     */
-    public function setImageUrl(string $imageUrl)
-    {
-        $this->imageUrl = $imageUrl;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSubtitle(): string
-    {
-        return $this->subtitle;
-    }
-
-    /**
-     * @param string $subtitle
-     * @return $this
-     */
-    public function setSubtitle(string $subtitle)
-    {
-        $this->subtitle = $subtitle;
-        return $this;
-    }
 
     /**
      * @return DefaultActionButton|null

@@ -14,34 +14,34 @@ class Summary implements Arrayable
     /**
      * Optional. The sub-total of the order.
      *
-     * @var double
+     * @var float
      */
     protected $subtotal;
 
     /**
      * Optional. The shipping cost of the order.
      *
-     * @var double
+     * @var float
      */
     protected $shippingCost;
 
     /**
      * Optional. The tax of the order.
      *
-     * @var double
+     * @var float
      */
     protected $totalTax;
 
     /**
      * The total cost of the order, including sub-total, shipping, and tax.
-     * @var double
+     * @var float
      */
     protected $totalCost;
 
     /**
-     * @return double
+     * @return float
      */
-    public function getSubtotal(): double
+    public function getSubtotal(): float
     {
         return $this->subtotal;
     }
@@ -57,18 +57,18 @@ class Summary implements Arrayable
     }
 
     /**
-     * @return double
+     * @return float
      */
-    public function getShippingCost(): double
+    public function getShippingCost(): float
     {
         return $this->shippingCost;
     }
 
     /**
-     * @param double $shippingCost
+     * @param float $shippingCost
      * @return Summary
      */
-    public function setShippingCost(double $shippingCost): Summary
+    public function setShippingCost(float $shippingCost): Summary
     {
         $this->shippingCost = $shippingCost;
         return $this;
@@ -77,7 +77,7 @@ class Summary implements Arrayable
     /**
      * @return float
      */
-    public function getTotalTax(): double
+    public function getTotalTax(): float
     {
         return $this->totalTax;
     }
@@ -86,25 +86,25 @@ class Summary implements Arrayable
      * @param float $totalTax
      * @return Summary
      */
-    public function setTotalTax(double $totalTax): Summary
+    public function setTotalTax(float $totalTax): Summary
     {
         $this->totalTax = $totalTax;
         return $this;
     }
 
     /**
-     * @return double
+     * @return float
      */
-    public function getTotalCost(): double
+    public function getTotalCost(): float
     {
         return $this->totalCost;
     }
 
     /**
-     * @param double $totalCost
+     * @param float $totalCost
      * @return Summary
      */
-    public function setTotalCost(double $totalCost): Summary
+    public function setTotalCost(float $totalCost): Summary
     {
         $this->totalCost = $totalCost;
         return $this;
@@ -118,6 +118,11 @@ class Summary implements Arrayable
      */
     public function toArray()
     {
-        // TODO: Implement toArray() method.
+        return [
+            'subtotal'      => $this->getSubtotal(),
+            'shipping_cost' => $this->getShippingCost(),
+            'total_tax'     => $this->getTotalTax(),
+            'total_cost'    => $this->getTotalCost()
+        ];
     }
 }
