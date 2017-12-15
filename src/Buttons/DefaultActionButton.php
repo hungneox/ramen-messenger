@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Payload\Buttons;
+namespace Neox\Lumen\Messenger\Buttons;
 
 /**
  * Class DefaultActionButton

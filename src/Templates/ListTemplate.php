@@ -2,7 +2,7 @@
 
 namespace Neox\Lumen\Messenger\Templates;
 
-use Neox\Lumen\Messenger\Templates\Payload\Traits\HasButtons;
+use Neox\Lumen\Messenger\Traits\HasButtons;
 
 /**
  * Class ListTemplate

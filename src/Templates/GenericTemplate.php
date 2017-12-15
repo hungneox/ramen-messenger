@@ -3,8 +3,7 @@
 namespace Neox\Lumen\Messenger\Templates;
 
 use Illuminate\Support\Collection;
-use Neox\Lumen\Messenger\Templates\Payload\Elements\Element;
-use Neox\Lumen\Messenger\Templates\Payload\Elements\ElementInterface;
+use Neox\Lumen\Messenger\Templates\Elements\ElementInterface;
 
 /**
  * Class GenericTemplate

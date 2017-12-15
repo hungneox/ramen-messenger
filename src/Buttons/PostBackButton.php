@@ -1,10 +1,10 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Payload\Buttons;
+namespace Neox\Lumen\Messenger\Buttons;
 
 /**
  * Class PostBackButton
- * @package Neox\Lumen\Messenger\Templates\Payload\Buttons
+ * @package Neox\Lumen\Messenger\Buttons
  */
 class PostBackButton extends Button
 {

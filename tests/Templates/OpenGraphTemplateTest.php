@@ -2,8 +2,8 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
-use Neox\Lumen\Messenger\Templates\Payload\Elements\OpenGraphElement;
+use Neox\Lumen\Messenger\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Elements\OpenGraphElement;
 use Neox\Lumen\Messenger\Templates\OpenGraphTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 

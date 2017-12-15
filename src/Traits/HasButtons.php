@@ -1,13 +1,13 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Payload\Traits;
+namespace Neox\Lumen\Messenger\Traits;
 
 use Illuminate\Support\Collection;
-use Neox\Lumen\Messenger\Templates\Payload\Buttons\Button;
+use Neox\Lumen\Messenger\Buttons\Button;
 
 /**
  * Trait HasButtons
- * @package Neox\Lumen\Messenger\Payload\Traits
+ * @package Neox\Lumen\Messenger\Traits
  */
 trait HasButtons
 {

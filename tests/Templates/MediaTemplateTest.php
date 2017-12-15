@@ -2,8 +2,8 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
-use Neox\Lumen\Messenger\Templates\Payload\Elements\MediaElement;
+use Neox\Lumen\Messenger\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Elements\MediaElement;
 use Neox\Lumen\Messenger\Templates\MediaTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 

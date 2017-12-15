@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Payload\Elements;
+namespace Neox\Lumen\Messenger\Templates\Elements;
 
 use Illuminate\Contracts\Support\Arrayable;
 

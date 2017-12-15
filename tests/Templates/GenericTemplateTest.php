@@ -2,9 +2,9 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Payload\Buttons\PostBackButton;
-use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
-use Neox\Lumen\Messenger\Templates\Payload\Elements\Element;
+use Neox\Lumen\Messenger\Buttons\PostBackButton;
+use Neox\Lumen\Messenger\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Elements\Element;
 use Neox\Lumen\Messenger\Templates\GenericTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 
