@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\Templates\Buttons;
+namespace Neox\Lumen\Messenger\Tests\Templates\Payload\Buttons;
 
 use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
 use Neox\Lumen\Messenger\Tests\TestCase;
