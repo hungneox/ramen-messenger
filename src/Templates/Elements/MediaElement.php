@@ -91,7 +91,7 @@ class MediaElement implements ElementInterface
             "media_type" => $this->getMediaType(),
         ];
 
-        if ($this->getUrl() !== null && $this->getAttachmentId() !== null) {
+        if (!empty($this->getUrl()) && !empty($this->getAttachmentId())) {
             throw new \InvalidArgumentException('url and attachment_id cannot be used at the same time');
         }
 
