@@ -2,8 +2,8 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Buttons\WebUrlButton;
-use Neox\Lumen\Messenger\Templates\Elements\MediaElement;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Payload\Elements\MediaElement;
 use Neox\Lumen\Messenger\Templates\MediaTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 
@@ -17,7 +17,7 @@ class MediaTemplateTest extends TestCase
                     ->setUrl('https://www.facebook.com/abcnews.au/videos/10157780705989988/')
                     ->setMediaType(MediaElement::TYPE_VIDEO)
                     ->addButton(
-                        (new WebUrlButton())
+                        (new UrlButton())
                             ->setTitle('More videos')
                             ->setUrl('https://www.facebook.com/abcnews.au')
                     )

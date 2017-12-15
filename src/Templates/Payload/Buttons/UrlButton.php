@@ -1,22 +1,25 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Buttons;
+namespace Neox\Lumen\Messenger\Templates\Payload\Buttons;
+
+use Neox\Lumen\Messenger\Templates\Payload\Traits\HasUrl;
 
 /**
- * Class DefaultActionButton
- * @package Neox\Lumen\Messenger\Templates\Buttons
+ * Class UrlButton
+ * @package Neox\Lumen\Messenger\Templates\Payload\Buttons
  */
-class DefaultActionButton extends WebUrlButton
+class UrlButton extends Button
 {
+    use HasUrl;
+
     /**
-     * No title for default button
-     *
      * @return array
      */
     public function toArray(): array
     {
         return [
             'type'                 => self::TYPE_WEB_URL,
+            'title'                => $this->getTitle(),
             'url'                  => $this->getUrl(),
             "messenger_extensions" => $this->isMessengerExtensions(),
             "webview_height_ratio" => $this->getWebviewHeightRatio(),

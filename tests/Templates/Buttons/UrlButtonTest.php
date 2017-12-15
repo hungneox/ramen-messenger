@@ -2,14 +2,14 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates\Buttons;
 
-use Neox\Lumen\Messenger\Templates\Buttons\WebUrlButton;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
 use Neox\Lumen\Messenger\Tests\TestCase;
 
-class WebUrlButtonTest extends TestCase
+class UrlButtonTest extends TestCase
 {
     public function testToArray()
     {
-        $button = (new WebUrlButton())->setUrl('http://example.com');
+        $button = (new UrlButton())->setUrl('http://example.com');
 
         $expected = [
             'type'                 => 'web_url',

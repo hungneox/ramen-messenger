@@ -2,8 +2,8 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Buttons\WebUrlButton;
-use Neox\Lumen\Messenger\Templates\Elements\OpenGraphElement;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Payload\Elements\OpenGraphElement;
 use Neox\Lumen\Messenger\Templates\OpenGraphTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 
@@ -16,7 +16,7 @@ class OpenGraphTemplateTest extends TestCase
                 (new OpenGraphElement())
                     ->setUrl('https://open.spotify.com/track/7GhIk7Il098yCjg4BQjzvb')
                     ->addButton(
-                        (new WebUrlButton())
+                        (new UrlButton())
                             ->setUrl('https://en.wikipedia.org/wiki/Rickrolling')
                             ->setTitle('View More')
                     )

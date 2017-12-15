@@ -2,10 +2,10 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Buttons\DefaultActionButton;
-use Neox\Lumen\Messenger\Templates\Buttons\PostBackButton;
-use Neox\Lumen\Messenger\Templates\Buttons\WebUrlButton;
-use Neox\Lumen\Messenger\Templates\Elements\Element;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\DefaultActionButton;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\PostBackButton;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Payload\Elements\Element;
 use Neox\Lumen\Messenger\Templates\ListTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 
@@ -36,7 +36,7 @@ class ListTemplateTest extends TestCase
                             ->setPayload('help')
                     )
             )->addButton(
-                (new WebUrlButton())
+                (new UrlButton())
                     ->setTitle('View more')
                     ->setUrl('https://butchiso.com')
             )->setRecipientId('1100178880089558');

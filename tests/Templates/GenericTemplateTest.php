@@ -2,9 +2,9 @@
 
 namespace Neox\Lumen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Buttons\PostBackButton;
-use Neox\Lumen\Messenger\Templates\Buttons\WebUrlButton;
-use Neox\Lumen\Messenger\Templates\Elements\Element;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\PostBackButton;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\UrlButton;
+use Neox\Lumen\Messenger\Templates\Payload\Elements\Element;
 use Neox\Lumen\Messenger\Templates\GenericTemplate;
 use Neox\Lumen\Messenger\Tests\TestCase;
 
@@ -45,7 +45,7 @@ class GenericTemplateTest extends TestCase
                 ->setSubtitle('Lire en français')
                 ->setImageUrl('https://static01.nyt.com/images/2017/12/06/world/06quebec1/06quebec1-master768.jpg')
                 ->addButton(
-                    (new WebUrlButton())
+                    (new UrlButton())
                         ->setTitle('Link to Article')
                         ->setUrl('https://www.nytimes.com/2017/12/05/world/canada/bonjour-hi-quebec.html')
                 )

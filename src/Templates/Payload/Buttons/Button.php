@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Buttons;
+namespace Neox\Lumen\Messenger\Templates\Payload\Buttons;
 
 /**
  * Class Button

@@ -1,9 +1,9 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Elements;
+namespace Neox\Lumen\Messenger\Templates\Payload\Elements;
 
-use Neox\Lumen\Messenger\Templates\Traits\HasButtons;
-use Neox\Lumen\Messenger\Templates\Traits\HasUrl;
+use Neox\Lumen\Messenger\Templates\Payload\Traits\HasButtons;
+use Neox\Lumen\Messenger\Templates\Payload\Traits\HasUrl;
 
 /**
  * Class OpenGraphElement

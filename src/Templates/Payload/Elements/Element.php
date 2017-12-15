@@ -1,10 +1,11 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Elements;
+namespace Neox\Lumen\Messenger\Templates\Payload\Elements;
 
-use Neox\Lumen\Messenger\Templates\Buttons\Button;
-use Neox\Lumen\Messenger\Templates\Buttons\DefaultActionButton;
-use Neox\Lumen\Messenger\Templates\Traits\HasButtons;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\Button;
+use Neox\Lumen\Messenger\Templates\Payload\Buttons\DefaultActionButton;
+use Neox\Lumen\Messenger\Templates\Payload\Elements\ElementInterface;
+use Neox\Lumen\Messenger\Templates\Payload\Traits\HasButtons;
 
 /**
  * Class Element

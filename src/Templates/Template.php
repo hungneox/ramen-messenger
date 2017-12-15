@@ -2,12 +2,14 @@
 
 namespace Neox\Lumen\Messenger\Templates;
 
+use Illuminate\Contracts\Support\Arrayable;
+
 /**
  * Class AbstractMessage
  * @package Neox\Main\Templates
  * @see https://developers.facebook.com/docs/messenger-platform/send-messages/templates
  */
-abstract class Template
+abstract class Template implements Arrayable
 {
 
     /**
