@@ -2,6 +2,7 @@
 
 namespace Neox\Lumen\Messenger\Buttons;
 
+use Illuminate\Contracts\Support\Arrayable;
 use Neox\Lumen\Messenger\Traits\HasTitle;
 
 /**
@@ -9,7 +10,7 @@ use Neox\Lumen\Messenger\Traits\HasTitle;
  * @package Neox\Jarvis\Messenger\Templates\Buttons
  * @see https://developers.facebook.com/docs/messenger-platform/send-messages/buttons
  */
-abstract class Button
+abstract class Button implements Arrayable
 {
     const TYPE_WEB_URL       = 'web_url';
     const TYPE_POSTBACK      = 'postback';
