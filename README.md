@@ -26,3 +26,39 @@ return (new OpenGraphTemplate())
             )->setRecipientId($sender);
 
 ```
+
+## Creating Persistent Menu
+
+![Persistent Menu](https://scontent.fhel1-1.fna.fbcdn.net/v/t39.2365-6/16686128_804279846389859_443648268883197952_n.png?oh=9f7df133cc9b64ce6411aa727c847495&oe=5AC251D6)
+```php
+return (new PersistentMenu())
+           ->addMenu(
+               (new Menu())->addItem(
+                   (new Menu())
+                       ->setType('nested')
+                       ->setTitle('My Account')
+                       ->addItem(
+                           (new PostBackButton())
+                                ->setTitle('Pay Bill')
+                                ->setPayload('PAYBILL_PAYLOAD')
+                       )->addItem(
+                           (new PostBackButton())
+                                ->setTitle('History')
+                                ->setPayload('HISTORY_PAYLOAD')
+                       )->addItem(
+                           (new PostBackButton())
+                                ->setTitle('Contact Info')
+                                ->setPayload('CONTACT_INFO_PAYLOAD')
+                       )
+               )->addItem(
+                   (new UrlButton())->setTitle('Latest News')->setUrl('https://www.messenger.com/')
+               )
+           )->addMenu(
+               (new Menu())->addItem(
+                   (new UrlButton())
+                        ->setTitle('Latest News CN')
+                        ->setPayload('PAYBILL_PAYLOAD')
+               )->setLocale('zh_CN')
+           );
+
+```
