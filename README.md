@@ -10,6 +10,25 @@ Lumen/Laravel package for developing facebook messenger chat bot
 
 ## Working with templates
 
+### Button template
+
+![Button template](https://scontent.fhel1-1.fna.fbcdn.net/v/t39.2365-6/23204276_131607050888932_1057585862134464512_n.png?oh=ec127f3527146478fe2039b37aaf44f7&oe=5ACADA0A)
+
+```php
+return (new ButtonTemplate())
+            ->setRecipientId($sender)
+            ->setText('What do you want to do next?')
+            ->addButton(
+                (new UrlButton())
+                    ->setUrl('https://www.messenger.com')
+                    ->setTitle('Get Order Status')
+            )->addButton(
+                (new UrlButton())
+                    ->setUrl('https://www.messenger.com')
+                    ->setTitle('Call Me')
+            );
+```
+
 ### Open graph template
 
 ![Open graph template](https://scontent-arn2-1.xx.fbcdn.net/v/t39.2365-6/23423203_163011880970306_7772330384011821056_n.png?oh=07b61b7ebf876cccf501cb57c066a9c4&oe=5ACEC2FE)
@@ -51,7 +70,9 @@ return (new PersistentMenu())
                                 ->setPayload('CONTACT_INFO_PAYLOAD')
                        )
                )->addItem(
-                   (new UrlButton())->setTitle('Latest News')->setUrl('https://www.messenger.com/')
+                   (new UrlButton())
+                        ->setTitle('Latest News')
+                        ->setUrl('https://www.messenger.com/')
                )
            )->addMenu(
                (new Menu())->addItem(
