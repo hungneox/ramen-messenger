@@ -72,14 +72,14 @@ return (new PersistentMenu())
                )->addItem(
                    (new UrlButton())
                         ->setTitle('Latest News')
-                        ->setUrl('https://www.messenger.com/')
+                        ->setUrl('https://yle.fi/uutiset/osasto/news/')
                )
            )->addMenu(
                (new Menu())->addItem(
                    (new UrlButton())
-                        ->setTitle('Latest News CN')
-                        ->setPayload('PAYBILL_PAYLOAD')
-               )->setLocale('zh_CN')
+                        ->setTitle('Latest News FI')
+                        ->setUrl('https://yle.fi/uutiset')
+               )->setLocale('fi_FI')
            );
 
 ```

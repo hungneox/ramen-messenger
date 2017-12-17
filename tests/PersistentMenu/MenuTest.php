@@ -9,7 +9,6 @@ use Neox\Lumen\Messenger\Tests\TestCase;
 
 class MenuTest extends TestCase
 {
-
     public function testToArray()
     {
         $menu =  (new Menu())->addItem(
