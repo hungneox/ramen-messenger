@@ -7,6 +7,16 @@
 Lumen/Laravel package for developing facebook messenger chat bot
 
 # Usage
+## Messenger Sdk Service
+
+```php
+/** @var MessengerSdkService $bot */
+$bot = app(MessengerSdkService::class);
+
+$bot->hears('Hello', function(MessengerSdkService $bot) {
+    $bot->replies('Greeting from the bot!');
+});
+```
 
 ## Working with templates
 
