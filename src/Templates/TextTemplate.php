@@ -2,6 +2,7 @@
 
 namespace Neox\Ramen\Messenger\Templates;
 
+use Neox\Ramen\Messenger\Traits\HasQuickReplies;
 use Neox\Ramen\Messenger\Traits\HasText;
 
 /**
@@ -11,6 +12,8 @@ use Neox\Ramen\Messenger\Traits\HasText;
 class TextTemplate extends Template
 {
     use HasText;
+    use HasQuickReplies;
+
 
     /**
      * TextTemplate constructor.
@@ -18,10 +21,14 @@ class TextTemplate extends Template
      * @param string|null $recipientId
      * @param string|null $text
      */
-    public function __construct(string $recipientId = null, string $text = null)
+    public function __construct(
+        string $recipientId = null,
+        string $text = null,
+        array $quickReplies = [])
     {
-        $this->text        = $text;
-        $this->recipientId = $recipientId;
+        $this->text         = $text;
+        $this->recipientId  = $recipientId;
+        $this->quickReplies = $quickReplies;
     }
 
     /**
@@ -29,8 +36,14 @@ class TextTemplate extends Template
      */
     public function getMessage(): array
     {
-        return [
+        $data = [
             'text' => $this->getText()
         ];
+
+        if (!empty($this->quickReplies)) {
+            $data['quick_replies'] = $this->getQuickRepliesAsArray();
+        }
+
+        return $data;
     }
 }

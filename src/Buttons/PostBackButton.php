@@ -2,34 +2,15 @@
 
 namespace Neox\Ramen\Messenger\Buttons;
 
+use Neox\Ramen\Messenger\Traits\HasPayload;
+
 /**
  * Class PostBackButton
  * @package Neox\Ramen\Messenger\Buttons
  */
 class PostBackButton extends Button
 {
-    /**
-     * @var string
-     */
-    protected $payload;
-
-    /**
-     * @return string
-     */
-    public function getPayload(): string
-    {
-        return $this->payload;
-    }
-
-    /**
-     * @param string $payload
-     * @return Button
-     */
-    public function setPayload(string $payload): Button
-    {
-        $this->payload = $payload;
-        return $this;
-    }
+    use HasPayload;
 
     /**
      * @return array

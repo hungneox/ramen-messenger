@@ -3,6 +3,7 @@
 namespace Neox\Ramen\Messenger\Traits;
 
 use Illuminate\Support\Collection;
+use Neox\Ramen\Messenger\Templates\Payload\QuickReply;
 
 trait HasQuickReplies
 {
@@ -22,9 +23,9 @@ trait HasQuickReplies
     /**
      * @return array
      */
-    public function getButtonsAsArray(): array
+    public function getQuickRepliesAsArray(): array
     {
-        return $this->getQuickReplies()->map(function ($quickReply) {
+        return $this->getQuickReplies()->map(function (QuickReply $quickReply) {
             return $quickReply->toArray();
         })->toArray();
     }

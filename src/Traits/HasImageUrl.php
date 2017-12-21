@@ -14,7 +14,7 @@ trait HasImageUrl
      */
     public function getImageUrl(): string
     {
-        return $this->imageUrl;
+        return $this->imageUrl ?? '';
     }
 
     /**
