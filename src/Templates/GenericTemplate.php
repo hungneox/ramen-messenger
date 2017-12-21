@@ -14,6 +14,16 @@ class GenericTemplate extends Template
 {
 
     /**
+     * GenericTemplate constructor.
+     *
+     * @param array $elements
+     */
+    public function __construct(array $elements = [])
+    {
+        $this->elements = $elements;
+    }
+
+    /**
      * @var
      */
     protected $elements;
