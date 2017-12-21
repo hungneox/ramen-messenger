@@ -1,11 +1,11 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\PersistentMenu;
+namespace Neox\Ramen\Messenger\Tests\PersistentMenu;
 
-use Neox\Lumen\Messenger\Buttons\PostBackButton;
-use Neox\Lumen\Messenger\Buttons\UrlButton;
-use Neox\Lumen\Messenger\PersistentMenu\Menu;
-use Neox\Lumen\Messenger\Tests\TestCase;
+use Neox\Ramen\Messenger\Buttons\PostBackButton;
+use Neox\Ramen\Messenger\Buttons\UrlButton;
+use Neox\Ramen\Messenger\PersistentMenu\Menu;
+use Neox\Ramen\Messenger\Tests\TestCase;
 
 class MenuTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates;
+namespace Neox\Ramen\Messenger\Templates;
 
-use Neox\Lumen\Messenger\Traits\HasButtons;
+use Neox\Ramen\Messenger\Traits\HasButtons;
 
 /**
  * Class ListTemplate
- * @package Neox\Lumen\Messenger\Templates
+ * @package Neox\Ramen\Messenger\Templates
  * @see https://developers.facebook.com/docs/messenger-platform/reference/template/list
  */
 class ListTemplate extends GenericTemplate

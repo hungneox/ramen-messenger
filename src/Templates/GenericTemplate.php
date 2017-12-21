@@ -1,13 +1,13 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates;
+namespace Neox\Ramen\Messenger\Templates;
 
 use Illuminate\Support\Collection;
-use Neox\Lumen\Messenger\Templates\Elements\ElementInterface;
+use Neox\Ramen\Messenger\Templates\Elements\ElementInterface;
 
 /**
  * Class GenericTemplate
- * @package Neox\Lumen\Messenger\Templates
+ * @package Neox\Ramen\Messenger\Templates
  * @see https://developers.facebook.com/docs/messenger-platform/reference/template/generic/
  */
 class GenericTemplate extends Template

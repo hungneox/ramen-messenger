@@ -1,10 +1,10 @@
 <?php
 
-namespace Neox\Lumen\Messenger\PersistentMenu;
+namespace Neox\Ramen\Messenger\PersistentMenu;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
-use Neox\Lumen\Messenger\Traits\HasButtons;
+use Neox\Ramen\Messenger\Traits\HasButtons;
 
 /**
  * Requirement:

@@ -1,6 +1,6 @@
 <?php
 
-namespace  Neox\Lumen\Messenger\Console;
+namespace  Neox\Ramen\Messenger\Console;
 
 use GuzzleHttp\ClientInterface;
 use Illuminate\Console\Command;

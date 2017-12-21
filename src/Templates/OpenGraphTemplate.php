@@ -1,10 +1,10 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates;
+namespace Neox\Ramen\Messenger\Templates;
 
 /**
  * Class OpenGraphTemplate
- * @package Neox\Lumen\Messenger\Templates
+ * @package Neox\Ramen\Messenger\Templates
  * @see https://developers.facebook.com/docs/messenger-platform/reference/template/open-graph
  */
 class OpenGraphTemplate extends GenericTemplate

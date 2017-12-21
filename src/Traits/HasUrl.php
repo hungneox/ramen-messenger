@@ -1,10 +1,10 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Traits;
+namespace Neox\Ramen\Messenger\Traits;
 
 /**
  * Trait HasUrl
- * @package Neox\Lumen\Messenger\Traits
+ * @package Neox\Ramen\Messenger\Traits
  */
 trait HasUrl
 {

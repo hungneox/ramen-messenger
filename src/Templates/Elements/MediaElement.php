@@ -1,9 +1,9 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Elements;
+namespace Neox\Ramen\Messenger\Templates\Elements;
 
-use Neox\Lumen\Messenger\Traits\HasButtons;
-use Neox\Lumen\Messenger\Traits\HasUrl;
+use Neox\Ramen\Messenger\Traits\HasButtons;
+use Neox\Ramen\Messenger\Traits\HasUrl;
 
 /**
  * Class MediaElement

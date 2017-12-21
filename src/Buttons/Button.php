@@ -1,9 +1,9 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Buttons;
+namespace Neox\Ramen\Messenger\Buttons;
 
 use Illuminate\Contracts\Support\Arrayable;
-use Neox\Lumen\Messenger\Traits\HasTitle;
+use Neox\Ramen\Messenger\Traits\HasTitle;
 
 /**
  * Class Button

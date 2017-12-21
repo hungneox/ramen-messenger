@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Neox\\Lumen\\Messenger\\": "src"
+            "Neox\\Ramen\\Messenger\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Neox\\Lumen\\Messenger\\Tests\\": "tests"
+            "Neox\\Ramen\\Messenger\\Tests\\": "tests"
         }
     },
     "license": "MIT",

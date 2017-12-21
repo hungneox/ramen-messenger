@@ -1,11 +1,11 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\Templates;
+namespace Neox\Ramen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Buttons\UrlButton;
-use Neox\Lumen\Messenger\Templates\Elements\OpenGraphElement;
-use Neox\Lumen\Messenger\Templates\OpenGraphTemplate;
-use Neox\Lumen\Messenger\Tests\TestCase;
+use Neox\Ramen\Messenger\Buttons\UrlButton;
+use Neox\Ramen\Messenger\Templates\Elements\OpenGraphElement;
+use Neox\Ramen\Messenger\Templates\OpenGraphTemplate;
+use Neox\Ramen\Messenger\Tests\TestCase;
 
 class OpenGraphTemplateTest extends TestCase
 {

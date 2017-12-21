@@ -1,17 +1,17 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests;
+namespace Neox\Ramen\Messenger\Tests;
 
 use GuzzleHttp\ClientInterface;
 use Illuminate\Http\Request;
-use Neox\Lumen\Messenger\Endpoints\MessagesEndpoint;
-use Neox\Lumen\Messenger\MessengerSdkService;
-use Neox\Lumen\Messenger\Templates\TextTemplate;
+use Neox\Ramen\Messenger\Endpoints\MessagesEndpoint;
+use Neox\Ramen\Messenger\MessengerService;
+use Neox\Ramen\Messenger\Templates\TextTemplate;
 
 class ServiceTest extends TestCase
 {
     /**
-     * @var MessengerSdkService
+     * @var MessengerService
      */
     protected $service;
 
@@ -38,7 +38,7 @@ class ServiceTest extends TestCase
                               ->disableOriginalConstructor()
                               ->getMock();
 
-        $this->service = new MessengerSdkService($this->client, $this->request);
+        $this->service = new MessengerService($this->client, $this->request);
     }
 
 
@@ -72,7 +72,7 @@ class ServiceTest extends TestCase
                       );
 
 
-        $this->service->hears('hello world', function (MessengerSdkService $service) {
+        $this->service->hears('hello world', function (MessengerService $service) {
             $service->replies('bonjour');
         });
     }

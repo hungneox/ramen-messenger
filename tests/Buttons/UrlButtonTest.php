@@ -1,9 +1,9 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\Templates\Payload\Buttons;
+namespace Neox\Ramen\Messenger\Tests\Templates\Payload\Buttons;
 
-use Neox\Lumen\Messenger\Buttons\UrlButton;
-use Neox\Lumen\Messenger\Tests\TestCase;
+use Neox\Ramen\Messenger\Buttons\UrlButton;
+use Neox\Ramen\Messenger\Tests\TestCase;
 
 class UrlButtonTest extends TestCase
 {

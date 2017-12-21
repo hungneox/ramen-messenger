@@ -1,8 +1,8 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Contracts;
+namespace Neox\Ramen\Messenger\Contracts;
 
-interface MessengerSdkServiceContract
+interface MessengerServiceContract
 {
     /**
      * @param string $message

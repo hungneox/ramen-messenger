@@ -1,15 +1,15 @@
 <?php
 
-namespace Neox\Lumen\Messenger\PersistentMenu;
+namespace Neox\Ramen\Messenger\PersistentMenu;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
-use Neox\Lumen\Messenger\Buttons\Button;
-use Neox\Lumen\Messenger\Traits\HasTitle;
+use Neox\Ramen\Messenger\Buttons\Button;
+use Neox\Ramen\Messenger\Traits\HasTitle;
 
 /**
  * Class Menu
- * @package Neox\Lumen\Messenger\PersistentMenu
+ * @package Neox\Ramen\Messenger\PersistentMenu
  */
 class Menu implements Arrayable
 {

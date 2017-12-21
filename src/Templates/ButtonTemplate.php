@@ -1,13 +1,13 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates;
+namespace Neox\Ramen\Messenger\Templates;
 
-use Neox\Lumen\Messenger\Traits\HasButtons;
-use Neox\Lumen\Messenger\Traits\HasText;
+use Neox\Ramen\Messenger\Traits\HasButtons;
+use Neox\Ramen\Messenger\Traits\HasText;
 
 /**
  * Class ButtonTemplate
- * @package Neox\Lumen\Messenger\Templates
+ * @package Neox\Ramen\Messenger\Templates
  * @see https://developers.facebook.com/docs/messenger-platform/reference/template/button
  */
 class ButtonTemplate extends Template

@@ -1,15 +1,15 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates;
+namespace Neox\Ramen\Messenger\Templates;
 
 use Illuminate\Support\Collection;
-use Neox\Lumen\Messenger\Templates\Payload\Address;
-use Neox\Lumen\Messenger\Templates\Payload\Adjustment;
-use Neox\Lumen\Messenger\Templates\Payload\Summary;
+use Neox\Ramen\Messenger\Templates\Payload\Address;
+use Neox\Ramen\Messenger\Templates\Payload\Adjustment;
+use Neox\Ramen\Messenger\Templates\Payload\Summary;
 
 /**
  * Class ReceiptTemplate
- * @package Neox\Lumen\Messenger\Templates
+ * @package Neox\Ramen\Messenger\Templates
  * @https://developers.facebook.com/docs/messenger-platform/reference/template/receipt
  */
 class ReceiptTemplate extends GenericTemplate

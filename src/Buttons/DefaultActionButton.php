@@ -1,10 +1,10 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Buttons;
+namespace Neox\Ramen\Messenger\Buttons;
 
 /**
  * Class DefaultActionButton
- * @package Neox\Lumen\Messenger\Templates\Payload\Buttons
+ * @package Neox\Ramen\Messenger\Templates\Payload\Buttons
  */
 class DefaultActionButton extends UrlButton
 {

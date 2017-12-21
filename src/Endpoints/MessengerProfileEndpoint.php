@@ -1,6 +1,6 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Endpoints;
+namespace Neox\Ramen\Messenger\Endpoints;
 
 class MessengerProfileEndpoint extends BaseEndpoint
 {

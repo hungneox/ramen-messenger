@@ -1,14 +1,14 @@
 <?php
 
-namespace Neox\Lumen\Messenger;
+namespace Neox\Ramen\Messenger;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
-use Neox\Lumen\Messenger\Contracts\MessengerSdkServiceContract;
+use Neox\Ramen\Messenger\Contracts\MessengerServiceContract;
 
-class MessengerSdkServiceProvider extends ServiceProvider
+class MessengerServiceProvider extends ServiceProvider
 {
     const CONFIG_KEY = 'facebook';
 
@@ -17,7 +17,7 @@ class MessengerSdkServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // In Lumen application configuration files needs to be loaded implicitly
+        // In Ramen application configuration files needs to be loaded implicitly
         if ($this->app instanceof \Laravel\Lumen\Application) {
             $this->app->configure(self::CONFIG_KEY);
         } else {
@@ -36,8 +36,8 @@ class MessengerSdkServiceProvider extends ServiceProvider
             return new Client([]);
         });
 
-        $this->app->singleton(MessengerSdkServiceContract::class, function () {
-            return new MessengerSdkService(
+        $this->app->singleton(MessengerServiceContract::class, function () {
+            return new MessengerService(
                 $this->app->make(ClientInterface::class),
                 $this->app->make(Request::class)
             );

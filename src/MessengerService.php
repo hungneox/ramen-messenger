@@ -1,15 +1,15 @@
 <?php
 
-namespace Neox\Lumen\Messenger;
+namespace Neox\Ramen\Messenger;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Illuminate\Http\Request;
-use Neox\Lumen\Messenger\Contracts\MessengerSdkServiceContract;
-use Neox\Lumen\Messenger\Endpoints\MessagesEndpoint;
-use Neox\Lumen\Messenger\Templates\TextTemplate;
+use Neox\Ramen\Messenger\Contracts\MessengerServiceContract;
+use Neox\Ramen\Messenger\Endpoints\MessagesEndpoint;
+use Neox\Ramen\Messenger\Templates\TextTemplate;
 
-class MessengerSdkService implements MessengerSdkServiceContract
+class MessengerService implements MessengerServiceContract
 {
 
     /**

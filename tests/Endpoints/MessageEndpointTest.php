@@ -1,9 +1,9 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\Endpoints;
+namespace Neox\Ramen\Messenger\Tests\Endpoints;
 
-use Neox\Lumen\Messenger\Endpoints\MessagesEndpoint;
-use Neox\Lumen\Messenger\Tests\TestCase;
+use Neox\Ramen\Messenger\Endpoints\MessagesEndpoint;
+use Neox\Ramen\Messenger\Tests\TestCase;
 
 class MessageEndpointTest extends TestCase
 {

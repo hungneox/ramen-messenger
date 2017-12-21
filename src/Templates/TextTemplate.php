@@ -1,12 +1,12 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates;
+namespace Neox\Ramen\Messenger\Templates;
 
-use Neox\Lumen\Messenger\Traits\HasText;
+use Neox\Ramen\Messenger\Traits\HasText;
 
 /**
  * Class TextTemplate
- * @package Neox\Lumen\Messenger\Templates
+ * @package Neox\Ramen\Messenger\Templates
  */
 class TextTemplate extends Template
 {

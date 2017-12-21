@@ -1,12 +1,12 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Payload;
+namespace Neox\Ramen\Messenger\Templates\Payload;
 
 use Illuminate\Contracts\Support\Arrayable;
 
 /**
  * Class Summary
- * @package Neox\Lumen\Messenger\Templates\Receipt
+ * @package Neox\Ramen\Messenger\Templates\Receipt
  */
 class Summary implements Arrayable
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Console;
+namespace Neox\Ramen\Messenger\Console;
 
-use Neox\Lumen\Messenger\Endpoints\MessengerProfileEndpoint;
-use Neox\Lumen\Messenger\PersistentMenu\PersistentMenu;
+use Neox\Ramen\Messenger\Endpoints\MessengerProfileEndpoint;
+use Neox\Ramen\Messenger\PersistentMenu\PersistentMenu;
 
 /**
  * Class SetPersistentMenuCommand
- * @package Neox\Lumen\Messenger\Console
+ * @package Neox\Ramen\Messenger\Console
  */
 abstract class SetPersistentMenuCommand extends AbstractCommand
 {

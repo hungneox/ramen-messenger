@@ -1,11 +1,11 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\Templates;
+namespace Neox\Ramen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Buttons\UrlButton;
-use Neox\Lumen\Messenger\Templates\Elements\MediaElement;
-use Neox\Lumen\Messenger\Templates\MediaTemplate;
-use Neox\Lumen\Messenger\Tests\TestCase;
+use Neox\Ramen\Messenger\Buttons\UrlButton;
+use Neox\Ramen\Messenger\Templates\Elements\MediaElement;
+use Neox\Ramen\Messenger\Templates\MediaTemplate;
+use Neox\Ramen\Messenger\Tests\TestCase;
 
 class MediaTemplateTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Payload;
+namespace Neox\Ramen\Messenger\Templates\Payload;
 
 use Illuminate\Contracts\Support\Arrayable;
 
 /**
  * Class Adjustment
- * @package Neox\Lumen\Messenger\Templates\Payload
+ * @package Neox\Ramen\Messenger\Templates\Payload
  * @see https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#adjustments
  */
 class Adjustment implements Arrayable

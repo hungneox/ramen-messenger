@@ -1,13 +1,13 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Tests\Templates;
+namespace Neox\Ramen\Messenger\Tests\Templates;
 
-use Neox\Lumen\Messenger\Templates\Elements\ReceiptElement;
-use Neox\Lumen\Messenger\Templates\Payload\Address;
-use Neox\Lumen\Messenger\Templates\Payload\Adjustment;
-use Neox\Lumen\Messenger\Templates\Payload\Summary;
-use Neox\Lumen\Messenger\Templates\ReceiptTemplate;
-use Neox\Lumen\Messenger\Tests\TestCase;
+use Neox\Ramen\Messenger\Templates\Elements\ReceiptElement;
+use Neox\Ramen\Messenger\Templates\Payload\Address;
+use Neox\Ramen\Messenger\Templates\Payload\Adjustment;
+use Neox\Ramen\Messenger\Templates\Payload\Summary;
+use Neox\Ramen\Messenger\Templates\ReceiptTemplate;
+use Neox\Ramen\Messenger\Tests\TestCase;
 
 class ReceiptTemplateTest extends TestCase
 {

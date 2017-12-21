@@ -1,12 +1,12 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Buttons;
+namespace Neox\Ramen\Messenger\Buttons;
 
-use Neox\Lumen\Messenger\Traits\HasUrl;
+use Neox\Ramen\Messenger\Traits\HasUrl;
 
 /**
  * Class UrlButton
- * @package Neox\Lumen\Messenger\Buttons
+ * @package Neox\Ramen\Messenger\Buttons
  */
 class UrlButton extends Button
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Neox\Lumen\Messenger\Templates\Elements;
+namespace Neox\Ramen\Messenger\Templates\Elements;
 
-use Neox\Lumen\Messenger\Buttons\DefaultActionButton;
-use Neox\Lumen\Messenger\Traits\HasButtons;
-use Neox\Lumen\Messenger\Traits\HasImageUrl;
-use Neox\Lumen\Messenger\Traits\HasSubtitle;
-use Neox\Lumen\Messenger\Traits\HasTitle;
+use Neox\Ramen\Messenger\Buttons\DefaultActionButton;
+use Neox\Ramen\Messenger\Traits\HasButtons;
+use Neox\Ramen\Messenger\Traits\HasImageUrl;
+use Neox\Ramen\Messenger\Traits\HasSubtitle;
+use Neox\Ramen\Messenger\Traits\HasTitle;
 
 /**
  * Class Element
