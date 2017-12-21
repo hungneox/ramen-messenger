@@ -1,10 +1,10 @@
-# Lumen Messenger Sdk
+# Ramen Messenger
 
 [![Build Status](https://travis-ci.org/hungneox/lumen-messenger-sdk.svg?branch=master)](https://travis-ci.org/hungneox/lumen-messenger-sdk)
 [![Coverage Status](https://coveralls.io/repos/github/hungneox/lumen-messenger-sdk/badge.svg?branch=master)](https://coveralls.io/github/hungneox/lumen-messenger-sdk?branch=master)
 [![StyleCI](https://styleci.io/repos/114259544/shield?style=flat)](https://styleci.io/repos/114259544)
 
-Lumen/Laravel package for developing facebook messenger chat bot
+A La**ra**vel/Lu**men** package for developing facebook messenger chat bot
 
 # Usage
 ## Messenger Sdk Service
