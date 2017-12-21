@@ -50,7 +50,7 @@ class MessengerSdkService implements MessengerSdkServiceContract
         $text         = $events[0]['message']['text'];
 
         // Don't handle message from the bot itself
-        if ($this->sender === env('FACEBOOK_PAGE_ID')) {
+        if ($this->sender === $this->getPageId()) {
             return;
         }
 
@@ -75,5 +75,17 @@ class MessengerSdkService implements MessengerSdkServiceContract
             (string)(new MessagesEndpoint()),
             (new TextTemplate($this->sender, $message))->toArray()
         );
+    }
+
+    /**
+     * @return string
+     */
+    public function getPageId()
+    {
+        if (function_exists('config')) {
+            return config('facebook.page_id');
+        }
+
+        return env('FACEBOOK_PAGE_ID');
     }
 }

@@ -12,6 +12,7 @@ class BaseEndpoint
     const FACEBOOK_GRAPH_URL     = 'https://graph.facebook.com';
     const FACEBOOK_GRAPH_VERSION = 'v2.6';
 
+
     /**
      * @return string
      */
@@ -25,6 +26,17 @@ class BaseEndpoint
      */
     public function __toString()
     {
-        return $this->getRequestUri() . $this->endpoint . '?access_token=' . env('MESSENGER_ACCESS_TOKEN');
+        return $this->getRequestUri() . $this->endpoint . '?access_token=' . $this->getAccessToken();
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccessToken()
+    {
+        if (function_exists('config')) {
+            return config('facebook.access_token');
+        }
+        return env('FACEBOOK_ACCESS_TOKEN');
     }
 }
