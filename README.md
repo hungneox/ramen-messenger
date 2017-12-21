@@ -10,10 +10,10 @@ A La**ra**vel/Lu**men** package for developing facebook messenger chat bot
 ## Messenger Sdk Service
 
 ```php
-/** @var MessengerSdkService $bot */
-$bot = app(MessengerSdkService::class);
+/** @var MessengerService $bot */
+$bot = app(MessengerService::class);
 
-$bot->hears('Hello', function(MessengerSdkService $bot) {
+$bot->hears('Hello', function(MessengerService $bot) {
     $bot->replies('Greeting from the bot!');
 });
 ```
