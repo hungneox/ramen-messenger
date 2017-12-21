@@ -93,3 +93,7 @@ return (new PersistentMenu())
            );
 
 ```
+
+# License
+
+See [LICENSE](LICENSE)
