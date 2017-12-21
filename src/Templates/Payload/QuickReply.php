@@ -9,6 +9,7 @@ use Neox\Ramen\Messenger\Traits\HasTitle;
 /**
  * Class QuickReply
  * @package Neox\Ramen\Messenger\Templates\Payload
+ * @see https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
  */
 class QuickReply
 {

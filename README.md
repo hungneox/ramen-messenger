@@ -20,6 +20,19 @@ $bot->hears('Hello', function(MessengerService $bot) {
 
 ## Working with templates
 
+### Text template
+
+#### Quick replies
+
+![Quick replies](https://scontent-arn2-1.xx.fbcdn.net/v/t39.2365-6/14235551_1274248235927465_1935714581_n.png?oh=a84b83c9e0c5a1de7cb921c516240448&oe=5ABCBA90)
+
+```php
+return (new TextTemplate($sender, 'Please share your location'))
+            ->addQuickReply(
+                (new QuickReply())->setContentType('location')
+            );
+```
+
 ### Button template
 
 ![Button template](https://scontent.fhel1-1.fna.fbcdn.net/v/t39.2365-6/23204276_131607050888932_1057585862134464512_n.png?oh=ec127f3527146478fe2039b37aaf44f7&oe=5ACADA0A)
