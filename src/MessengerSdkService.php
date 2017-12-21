@@ -72,10 +72,8 @@ class MessengerSdkService implements MessengerSdkServiceContract
         }
 
         $this->httpClient->post(
-            (new MessagesEndpoint())->__toString(),
-            (new TextTemplate())
-                ->setRecipientId($this->sender)
-                ->setText($message)->toArray()
+            (string)(new MessagesEndpoint()),
+            (new TextTemplate($this->sender, $message))->toArray()
         );
     }
 }
