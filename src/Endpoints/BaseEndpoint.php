@@ -71,6 +71,6 @@ class BaseEndpoint
         if (function_exists('config')) {
             return config('facebook.access_token');
         }
-        return env('FACEBOOK_ACCESS_TOKEN');
+        return env('FACEBOOK_ACCESS_TOKEN') ?? '';
     }
 }

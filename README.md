@@ -1,7 +1,7 @@
 # Ramen Messenger
 
-[![Build Status](https://travis-ci.org/hungneox/lumen-messenger-sdk.svg?branch=master)](https://travis-ci.org/hungneox/lumen-messenger-sdk)
-[![Coverage Status](https://coveralls.io/repos/github/hungneox/lumen-messenger-sdk/badge.svg?branch=master)](https://coveralls.io/github/hungneox/lumen-messenger-sdk?branch=master)
+[![Build Status](https://travis-ci.org/hungneox/ramen-messenger.svg?branch=master)](https://travis-ci.org/hungneox/ramen-messenger)
+[![Coverage Status](https://coveralls.io/repos/github/hungneox/ramen-messenger/badge.svg?branch=master)](https://coveralls.io/github/hungneox/ramen-messenger?branch=master)
 [![StyleCI](https://styleci.io/repos/114259544/shield?style=flat)](https://styleci.io/repos/114259544)
 
 A La**ra**vel/Lu**men** package for developing facebook messenger chat bot

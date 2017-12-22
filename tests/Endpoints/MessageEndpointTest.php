@@ -11,7 +11,7 @@ class MessageEndpointTest extends TestCase
     {
         $this->assertEquals(
             'https://graph.facebook.com/v2.6/me/messages?access_token=',
-            (new MessagesEndpoint())->__toString()
+            (string)(new MessagesEndpoint())
         );
     }
 }

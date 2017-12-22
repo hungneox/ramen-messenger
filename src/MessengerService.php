@@ -77,6 +77,11 @@ class MessengerService implements MessengerServiceContract
         );
     }
 
+    public function listen()
+    {
+        //@TODO Listen to a list of registered keywords
+    }
+
     /**
      * @return string
      */
