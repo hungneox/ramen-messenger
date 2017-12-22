@@ -7,7 +7,7 @@
 A La**ra**vel/Lu**men** package for developing facebook messenger chat bot
 
 # Usage
-## Messenger Sdk Service
+## Messenger Service
 
 ```php
 /** @var MessengerService $bot */
