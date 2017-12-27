@@ -7,6 +7,7 @@ use GuzzleHttp\ClientInterface;
 use Illuminate\Http\Request;
 use Neox\Ramen\Messenger\Contracts\MessengerServiceContract;
 use Neox\Ramen\Messenger\Endpoints\MessagesEndpoint;
+use Neox\Ramen\Messenger\Templates\Template;
 use Neox\Ramen\Messenger\Templates\TextTemplate;
 
 class MessengerService implements MessengerServiceContract
@@ -71,11 +72,19 @@ class MessengerService implements MessengerServiceContract
             throw new \InvalidArgumentException('Message text cannot be empty!');
         }
 
-        $this->httpClient->post(
-            (string)(new MessagesEndpoint()),
-            (new TextTemplate($this->sender, $message))->toArray()
-        );
+        $this->sends((new TextTemplate($this->sender, $message)));
     }
+
+    /**
+     * Send message to messenger
+     *
+     * @param Template $template
+     */
+    public function sends(Template $template)
+    {
+        $this->httpClient->post((string)(new MessagesEndpoint()), $template->toArray());
+    }
+
 
     public function listen()
     {

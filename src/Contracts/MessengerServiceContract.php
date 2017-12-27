@@ -2,6 +2,8 @@
 
 namespace Neox\Ramen\Messenger\Contracts;
 
+use Neox\Ramen\Messenger\Templates\Template;
+
 interface MessengerServiceContract
 {
     /**
@@ -13,4 +15,9 @@ interface MessengerServiceContract
      * @param string $message
      */
     public function replies(string $message);
+
+    /**
+     * @param Template $template
+     */
+    public function sends(Template $template);
 }

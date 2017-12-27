@@ -10,10 +10,9 @@ A La**ra**vel/Lu**men** package for developing facebook messenger chat bot
 ## Messenger Service
 
 ```php
-/** @var MessengerService $bot */
-$bot = app(MessengerService::class);
-
-$bot->hears('Hello', function(MessengerService $bot) {
+/** @var RamenBot $bot */
+$bot = app(RamenBot::class);
+$bot->hears('Hello', function(RamenBot $bot) {
     $bot->replies('Greeting from the bot!');
 });
 ```
