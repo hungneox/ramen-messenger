@@ -32,7 +32,7 @@ abstract class SetPersistentMenuCommand extends AbstractCommand
     public function handle()
     {
         $this->httpClient->post(
-            (new MessengerProfileEndpoint())->__toString(),
+            (string)(new MessengerProfileEndpoint()),
             $this->getMenu()->toArray()
         );
     }
