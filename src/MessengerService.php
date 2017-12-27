@@ -54,7 +54,7 @@ class MessengerService implements MessengerServiceContract
             return;
         }
 
-        if ($text === $message) {
+        if (mb_strtolower($text) === mb_strtolower($message)) {
             $callback($this);
         }
     }
