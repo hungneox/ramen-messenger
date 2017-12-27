@@ -3,6 +3,9 @@
 [![Build Status](https://travis-ci.org/hungneox/ramen-messenger.svg?branch=master)](https://travis-ci.org/hungneox/ramen-messenger)
 [![Coverage Status](https://coveralls.io/repos/github/hungneox/ramen-messenger/badge.svg?branch=master)](https://coveralls.io/github/hungneox/ramen-messenger?branch=master)
 [![StyleCI](https://styleci.io/repos/114259544/shield?style=flat)](https://styleci.io/repos/114259544)
+[![Latest Unstable Version](https://poser.pugx.org/hungneox/ramen-messenger/v/unstable)](https://packagist.org/packages/hungneox/ramen-messenger)
+[![Total Downloads](https://poser.pugx.org/hungneox/ramen-messenger/downloads)](https://packagist.org/packages/hungneox/ramen-messenger)
+[![License](https://poser.pugx.org/hungneox/ramen-messenger/license)](https://packagist.org/packages/hungneox/ramen-messenger)
 
 A La**ra**vel/Lu**men** package for developing facebook messenger chat bot
 
