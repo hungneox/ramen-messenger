@@ -30,6 +30,31 @@ Add the following line to bootstrap/app.php:
 $app->register(\Neox\Ramen\Messenger\MessengerServiceProvider::class);
 ```
 
+To [configure the webhook](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup) for your app, adding a route for facebook verification
+
+```php
+$router->get('/webhook', [
+    'as'   => 'webhook.index',
+    'uses' => 'WebHookController@index'
+]);
+```
+
+```php
+/**
+ * For facebook verification
+ *
+ * @param Request $request
+ */
+public function index(Request $request)
+{
+    if ($request->get('hub_verify_token') === config('facebook.verify_token')) {
+        return $request->get('hub_challenge');
+    }
+
+    return 'Wrong verification token!';
+}
+```
+
 ## Messenger Service
 
 ```php
