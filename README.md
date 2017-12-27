@@ -7,6 +7,29 @@
 A La**ra**vel/Lu**men** package for developing facebook messenger chat bot
 
 # Usage
+
+## Installation
+Run the following command to install the package through Composer:
+
+```
+composer require composer require hungneox/ramen-messenger
+```
+Add these environment variables to your .env
+
+```
+FACEBOOK_PAGE_ID=<YOUR_FACEBOOK_PAGE_ID>
+FACEBOOK_VERIFY_TOKEN=<TOKEN_FOR_VERIFY_YOUR_BOT>
+FACEBOOK_ACCESS_TOKEN=<YOUR_FACEBOOK_PAGE_ACCESS_TOKEN>
+```
+
+Copy the configuration template in config/facebook.php to your application's config directory and modify it to suit your needs.
+
+Add the following line to bootstrap/app.php:
+
+```php
+$app->register(\Neox\Ramen\Messenger\MessengerServiceProvider::class);
+```
+
 ## Messenger Service
 
 ```php

@@ -1,7 +1,7 @@
 {
-    "name": "hungneox/lumen-messenger-sdk",
+    "name": "hungneox/ramen-messenger",
     "description": "Lumen/Laravel package for developing facebook messenger chat bot",
-    "type": "library, sdk",
+    "type": "library",
     "keywords": ["lumen-package", "laravel-package", "facebook", "messenger", "bot"],
     "require": {
         "illuminate/support": "v5.5.17",
